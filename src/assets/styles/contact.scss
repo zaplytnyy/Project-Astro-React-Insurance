@@ -1,0 +1,169 @@
+.contact{
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    .wrapper-top{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 70vh;
+        .title{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+            right: -8%;
+            width: 40%;
+            p{
+                font-family: 'regular';
+                width: 70%;
+                height: auto;
+                font-size: 1.1em;
+                white-space: pre-wrap;
+                font-weight: 900;
+                margin-top: 2%;
+                opacity: 0.5;
+            }
+            h1{
+                font-family: "regular";
+                font-size: 4em;
+                font-weight: 900;
+                margin: 0;
+                letter-spacing: 1px;
+                width: 80%;
+                line-height: 1.2em;
+            }
+            a{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3.6em;
+                width: 15em;
+                background-color: #d91118;
+                border-radius: 50px;
+                margin-top: 6vh;
+                span{
+                    z-index: 1;
+                    color: #fff;
+                    font-family: 'regular';
+                    font-size: 1.45em;
+                }
+                &::after{
+                    border-radius: 50px;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #d91118;
+                    transform: scale(1);
+                    transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1), opacity 0.15s cubic-bezier(0.4, 0, 0, 1), background-color 0.3s cubic-bezier(0.4, 0, 0, 1);
+                }
+                &:hover{
+                    color: #fff;
+                    &::after{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        .gatsby-img-contact{
+            width: 40%;
+            position: relative;
+            left: -3%;
+        }
+    }
+    .wrapper-bottom{
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        height: 30vh;
+        svg{
+            width: 3.5vh;
+            height: 3.5vh;
+            margin-right: 2vh;
+        }
+        .about, .follow, .contact-us{
+            width: 11%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            top:8%;
+            right: -5%;
+            //height: 100%;
+            p{
+                color: #fff;
+            }
+            h2{
+                color: #fff;
+                font-size: 1.5em;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 3vh;
+            }
+        }
+        .contact-us{
+            width: 25%;
+        }
+    }
+}
+
+
+.youtube-svg {
+    fill: #fff;
+}
+.youtube-svg2 {
+    fill: #424a68;
+}
+.facebook-svg1 {
+    fill: #fff;
+}
+.facebook-svg2 {
+    fill: #424a68;
+}
+.inst-svg {
+    fill: #fff;
+}
+
+.inst-svg2 {
+    fill: #424a68;
+}
+.phone {
+    fill: #fff;
+    fill-rule: evenodd;
+}
+.address {
+    fill: #fff;
+    fill-rule: evenodd;
+}
+.email {
+    fill: #fff;
+    fill-rule: evenodd;
+}
+
+.top-svg {
+    fill: #394c6b;
+}

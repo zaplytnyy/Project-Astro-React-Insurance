@@ -1,0 +1,94 @@
+---
+import { SEO } from "astro-seo";
+import { pwaInfo } from 'virtual:pwa-info';
+import Sidebar from '@components/Sidebar.astro'
+import "@assets/styles/index.scss";
+import "@assets/styles/banner.scss";
+import moon from "../../public/fonts/Moon2.0-Regular.otf";
+import raleway from"../../public/fonts/raleway.woff2";
+
+export const prerender = true;
+
+export interface Props {
+  title: string;
+  descriptionMeta: string;
+  keywordsMeta: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.png",
+  Astro.site
+).toString();
+
+const { title, keywordsMeta ,descriptionMeta } = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="generator" content={Astro.generator} />
+    <script src="/src/pwa.ts"></script>
+    <link rel="sitemap" href="/sitemap-index.xml">
+    { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
+    <SEO
+      title={title}
+      description={descriptionMeta}
+      canonical={canonicalURL}
+      twitter={{
+        creator: "Zaplytnyy, zaplytnyy@gmail.com",
+        site: "zaplytnyy@gmail.com",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: title,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: title,
+        },   
+      }}
+      extend={{
+        link: [ 
+            { rel: "preload", href: raleway, as:"font", type:"font/woff2", crossorigin:""},
+            { rel: "preload", href: moon, as:"font", type:"font/otf", crossorigin:""}
+        ],
+        meta:[
+            { name: 'keywords', content: keywordsMeta },
+            { name:"author", content:"zaplytnyy, zaplytnyy@gmail.com"},
+            { property:"og:description", content: descriptionMeta},
+            { name:"url", content:canonicalURL },
+            { name:"identifier-URL", content:canonicalURL },
+            { name:"distribution", content:"Global" },
+            { name:"rating", content:"General" },
+            { name:"apple-mobile-web-app-capable", content:"yes" },
+            { name:"apple-touch-fullscreen", content:"yes" },
+            { name:"copyright", content:"DeLoor Podiatry" },
+        ]
+      }}
+    />
+  </head>
+  <body class="is-preload event-sidebar">
+    <Sidebar></Sidebar>
+    <slot />
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>
+<script>
+  const bodyClass2 = document.querySelector(".event-sidebar")!;
+  setTimeout(() => {
+    bodyClass2.classList.remove("is-preload")
+  }, 0);
+</script>

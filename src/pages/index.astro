@@ -1,0 +1,412 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image, Picture } from '@astrojs/image/components';
+import podiaryImage from "../assets/images/podiatry.webp";
+import "@assets/styles/banner.scss";
+---
+
+<Layout 
+title="test" 
+keywordsMeta="test" 
+descriptionMeta="test">
+
+        <script>
+            function scrollTo(element) {
+              window.scroll({
+                behavior: 'smooth',
+                left: 0,
+                top: element.offsetTop
+              });
+            }
+
+            document.getElementById("scrolldown").addEventListener('click', () => {
+              scrollTo(document.getElementById("about"));
+            });
+        </script>
+        <section id="banner">
+          <div class="inner">
+            <h1>DELOOR PODIATRY CORPORATION</h1>
+            <h2>Podiatrists & Podiatric Surgeons located in New York City</h2>
+            <h3>Upper East Side | Herald Square | Bensonhurst</h3>
+            <a href="tel:3322309230"> Call us (332)-230-9230</a>
+          </div>
+          <section id="scrolldown" class="demo">
+            <div><span></span>See More</div>
+          </section>
+        </section>
+        <section id="about">
+          <h2>About Podiatry Practice:</h2>
+          <div class="wrapper">
+            <div class="introduction">
+              <h3>What is podiatry?</h2>
+              <p>
+                Podiatry is a specialized field within the medical profession that focuses on the diagnosis, treatment, and prevention of conditions affecting the feet and ankle. A podiatrist, also known as a podiatric physician or foot doctor, is a highly trained medical professional who specializes in foot and ankle care. With an in-depth understanding of the complex structure and biomechanics of the feet, podiatrists play a vital role in maintaining the overall health and well-being of their patients.
+              </p>
+              <p>
+                One of the primary areas of expertise for podiatrists is foot and ankle examinations. These comprehensive assessments involve a thorough evaluation of the feet, ankles, and lower limbs to identify any existing or potential issues. Podiatrists assess factors such as gait abnormalities, joint mobility, nerve function, circulation, and skin health. By conducting these examinations, podiatrists can diagnose a wide range of conditions, from common problems like ingrown toenails and corns to more complex issues such as fractures, ligament injuries, and diabetic foot complications.
+              </p>
+              <p>
+                Podiatrists employ various diagnostic tools and techniques to assist in accurate diagnosis. X-rays, ultrasound, MRI scans, and laboratory tests are among the tools used to evaluate and identify specific foot and ankle conditions. Through their specialized training, podiatrists can interpret these diagnostic results and develop personalized treatment plans tailored to each patient's needs.
+              </p>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <Picture src={podiaryImage} widths={[400, 800, 1200]} sizes="(max-width: 2500px)35vw" aspectRatio="2:1" alt="descriptive text" />
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="introduction">
+              <h4>Treatment provided by podiatrists</h2>
+              <p>
+                When it comes to treatment, podiatrists offer both conservative and surgical interventions. Conservative treatments include but are not limited to medication, physical therapy, orthotic devices, and footwear modifications. Podiatrists may prescribe custom orthotics or shoe inserts to provide support, correct alignment, and relieve pressure on specific areas of the foot. These devices are designed to alleviate pain, improve functionality, and prevent further damage.              </p>
+              <p>
+                In cases where conservative treatments do not provide sufficient relief, podiatrists may recommend surgical interventions. Podiatric surgery covers a broad range of procedures, including bunion correction, hammertoe surgery, joint fusions, tendon repairs, and fracture fixation. With advances in surgical techniques and technology, many podiatric surgeries can now be performed using minimally invasive approaches, resulting in reduced postoperative pain, faster recovery times, and improved outcomes for patients.              </p>
+              <p>
+                Podiatrists also play a significant role in managing foot-related complications associated with chronic conditions like diabetes. Through regular foot examinations, podiatrists assess nerve function, circulation, and skin integrity, helping to prevent and manage diabetic foot ulcers, infections, and other complications. They provide education on proper foot care, wound management techniques, and diabetic footwear to promote optimal foot health and reduce the risk of amputations.              </p>
+              <p>Furthermore, podiatrists contribute to the field of sports medicine, providing specialized care for athletes and individuals involved in physical activities. They diagnose and treat sports-related foot and ankle injuries, develop rehabilitation plans, and offer guidance on injury prevention. By working closely with athletes, podiatrists help them return to their sports activities as quickly and safely as possible.</p>
+            </div>
+          </div>
+        </section>
+        <section id="location">
+          <div class="container">
+            <div class="row">
+              <h3 class="title">Podiatry Offices in New York City</h3>
+              <p>Discover premier podiatry care in Manhattan and Brooklyn! Our two medical offices in Manhattan, located in the upscale Upper East Side and bustling Herald Square, provide cutting-edge treatments for all foot and ankle ailments. With our state-of-the-art facility in Brooklyn's vibrant Bensonhurst, we extend our exceptional services to the heart of the borough. Experience personalized care, expert podiatrists, and a commitment to your foot health. Book your appointment today and step towards pain-free living!</p>
+            </div>
+            <div class="offices">
+              <div class="col">
+                <svg 
+                    width="406.000000pt" height="172.000000pt" viewBox="0 0 406.000000 172.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                  
+                  <g transform="translate(0.000000,172.000000) scale(0.100000,-0.100000)"
+                  fill="#000000" stroke="none">
+                  <path d="M3218 1533 c-3 -129 -4 -138 -23 -141 -45 -9 -45 -5 -45 -399 l0
+                  -374 -27 -23 c-24 -21 -27 -32 -32 -109 -9 -127 -21 -117 -21 17 0 94 -3 118
+                  -15 122 -10 4 -15 20 -15 45 0 36 -2 39 -29 39 -24 0 -29 -5 -35 -31 -3 -17
+                  -6 -53 -6 -80 l0 -49 -38 0 c-32 0 -39 4 -50 30 -11 24 -20 30 -45 31 -18 0
+                  -42 2 -54 5 -22 4 -23 1 -23 -61 0 -58 -2 -65 -20 -65 -17 0 -20 -7 -20 -39 0
+                  -48 -12 -58 -44 -34 -20 15 -27 33 -37 101 -12 83 -24 106 -40 81 -6 -10 -9
+                  -2 -9 24 l0 37 -75 0 -75 0 0 -30 c0 -16 -4 -30 -10 -30 -5 0 -10 -11 -10 -24
+                  0 -33 -17 -76 -30 -76 -5 0 -10 20 -10 45 0 48 -11 56 -51 35 -13 -7 -25 -7
+                  -38 0 -11 5 -40 7 -65 4 l-46 -7 0 -43 c0 -32 -4 -44 -15 -44 -9 0 -15 -9 -15
+                  -25 0 -35 -16 -31 -24 6 -5 25 -9 29 -26 24 -19 -6 -20 -2 -20 74 l0 81 -50 0
+                  c-57 0 -58 -1 -70 -83 l-8 -52 -1 63 -1 62 -30 0 c-29 0 -30 1 -30 50 l0 50
+                  -50 0 c-47 0 -50 -2 -50 -26 0 -23 -3 -25 -32 -22 l-33 3 -6 190 c-7 222 -12
+                  253 -45 288 -20 22 -24 37 -24 86 0 33 -4 63 -10 66 -5 3 -10 23 -11 43 0 20
+                  -4 46 -8 56 -7 18 -8 18 -14 -5 -4 -13 -7 -39 -7 -56 0 -18 -4 -33 -10 -33 -6
+                  0 -10 -27 -10 -62 0 -50 -5 -67 -25 -94 -35 -45 -44 -135 -47 -434 -1 -131 -4
+                  -181 -5 -113 l-4 123 -49 0 -50 0 0 -146 c0 -94 -4 -143 -10 -139 -6 4 -10 59
+                  -10 131 0 136 -6 154 -54 154 -25 0 -26 1 -26 70 l0 70 -35 0 -35 0 0 -146 c0
+                  -133 -1 -145 -18 -142 -15 3 -17 18 -20 126 l-3 123 -37 -3 -37 -3 -3 -177
+                  c-1 -108 -6 -178 -12 -178 -6 0 -10 9 -10 20 0 10 -8 23 -17 29 -15 8 -19 27
+                  -21 100 l-4 91 -99 0 -99 0 0 -65 c0 -51 -3 -65 -15 -65 -9 0 -15 -9 -15 -23
+                  0 -13 -7 -32 -15 -43 -13 -17 -14 -3 -15 133 0 99 -4 153 -11 155 -6 2 -25 78
+                  -43 168 l-33 165 -11 -55 c-14 -69 -52 -270 -52 -276 0 -2 -7 -4 -15 -4 -12 0
+                  -15 -17 -15 -97 l0 -98 -92 0 -93 0 -5 -120 c-4 -66 -7 -103 -8 -82 -2 34 -4
+                  37 -32 37 -19 0 -33 7 -40 20 -9 16 -21 20 -65 20 l-55 0 0 -55 0 -55 -70 0
+                  -70 0 0 -145 0 -145 1950 0 1950 0 0 68 0 67 -62 42 c-35 24 -78 46 -95 49
+                  -18 4 -33 12 -33 19 0 7 -7 18 -15 25 -12 10 -15 38 -15 131 l0 119 -50 0 -50
+                  0 -1 -82 c0 -56 -3 -76 -9 -63 -5 11 -9 143 -9 293 l-1 272 -60 0 -60 0 -2
+                  -267 -3 -268 -2 237 -3 238 -39 40 c-21 22 -42 40 -47 40 -5 0 -30 -18 -56
+                  -41 l-48 -41 0 -211 c0 -139 -3 -208 -10 -201 -6 6 -11 165 -12 414 -3 403 -3
+                  405 -24 408 -19 3 -22 12 -27 85 -4 45 -7 108 -7 140 0 31 -4 57 -10 57 -5 0
+                  -11 -57 -12 -137z"/>
+                  </g>
+                </svg>
+                <h4 class="title">Upper East Side Podiatry</h4>
+                <h4>Upper East Side 115 E 61ST ST,lower level suite</h4>
+                <p>Located in the prestigious Upper East Side neighborhood of Manhattan, this podiatry medical office offers top-notch foot and ankle care to the residents of the area. With a team of highly skilled and experienced podiatrists, the office provides a wide range of services, including diagnosis, treatment, and preventive care for various foot conditions. The office boasts state-of-the-art equipment and modern facilities to ensure the highest level of patient comfort and satisfaction. Whether it's a minor foot ailment or a complex surgical procedure, Upper East Side Podiatry is dedicated to delivering personalized and effective solutions to promote optimal foot health.</p>
+              </div>
+              <div class="col">
+                <svg 
+                    width="654.000000pt" height="260.000000pt" viewBox="0 0 654.000000 260.000000"
+                    preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,260.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M5226 2478 c-3 -13 -7 -42 -9 -65 -3 -23 -14 -61 -25 -85 -11 -24
+                    -34 -72 -51 -108 -34 -73 -44 -109 -46 -160 -4 -120 -4 -120 -25 -120 -18 0
+                    -20 -7 -20 -89 0 -80 -2 -89 -20 -94 -20 -5 -20 -14 -20 -436 l0 -431 -55 0
+                    -55 0 0 345 0 345 -24 0 c-19 0 -25 6 -28 28 -4 35 -39 38 -48 4 -11 -49 -25
+                    -25 -28 51 -4 102 -22 100 -22 -3 0 -73 -2 -80 -20 -80 -11 0 -20 7 -20 15 0
+                    8 -7 15 -14 15 -22 0 -58 -37 -115 -120 l-51 -74 0 -354 0 -353 -62 3 -63 3
+                    -3 235 c-2 195 -5 236 -17 243 -11 6 -15 25 -15 67 0 58 -1 60 -26 60 -24 0
+                    -25 -2 -24 -52 2 -72 1 -78 -10 -78 -5 0 -10 14 -10 30 0 25 -4 30 -24 30 -19
+                    0 -25 -6 -28 -27 -3 -23 -8 -28 -35 -29 -18 -1 -33 2 -33 7 0 15 -54 10 -88
+                    -7 -18 -8 -32 -22 -32 -30 0 -8 -9 -14 -20 -14 -20 0 -20 -7 -20 -270 l0 -270
+                    -25 0 -25 0 0 465 c0 294 -4 465 -10 465 -9 0 -65 -24 -170 -73 -30 -14 -72
+                    -33 -92 -41 l-38 -15 0 -351 0 -351 -52 3 -53 3 -6 380 c-3 241 -10 393 -17
+                    415 -6 19 -18 60 -27 90 -8 30 -19 66 -24 80 -5 14 -12 37 -15 53 -6 24 -10
+                    27 -51 27 -51 0 -53 -2 -70 -78 -13 -57 -34 -141 -54 -217 -6 -24 -11 -183
+                    -11 -397 l0 -358 -35 0 -35 0 0 275 0 275 -25 16 c-22 15 -25 23 -25 80 0 57
+                    -2 64 -20 64 -18 0 -20 -7 -20 -64 0 -65 -14 -94 -32 -62 -13 22 -153 24 -162
+                    1 -3 -8 -14 -15 -26 -15 -19 0 -20 -7 -22 -337 l-3 -338 -28 0 -29 0 1 244 c0
+                    143 -4 252 -10 262 -5 11 -21 19 -34 19 -22 0 -24 5 -28 53 l-3 52 -2 -52 c-2
+                    -46 -5 -53 -22 -53 -11 0 -20 7 -20 15 0 12 -16 15 -80 15 -62 0 -80 -3 -80
+                    -14 0 -8 -10 -16 -23 -20 -46 -11 -57 -64 -57 -269 l0 -187 -95 0 c-69 0 -95
+                    3 -95 13 0 6 0 157 0 335 l1 322 -31 0 c-31 0 -33 3 -34 60 -1 24 -6 36 -19
+                    38 -14 3 -17 -4 -17 -47 0 -39 -4 -51 -15 -51 -8 0 -15 6 -15 14 0 29 -69 36
+                    -77 8 -3 -15 -15 -19 -53 -20 -46 -1 -49 1 -52 26 -2 23 -8 27 -33 27 -28 0
+                    -30 -3 -37 -45 -3 -25 -7 -161 -7 -302 l-1 -258 -40 0 -40 0 0 88 c-1 70 -4
+                    91 -19 109 -27 32 -89 32 -119 0 -19 -20 -22 -36 -24 -157 l-3 -135 -90 0 -90
+                    0 -3 103 -3 102 -69 0 c-58 0 -73 4 -87 20 -10 11 -23 20 -30 20 -7 0 -13 9
+                    -13 20 0 16 -7 20 -30 20 -23 0 -30 -4 -30 -20 0 -15 -7 -20 -25 -20 -14 0
+                    -25 5 -25 10 0 22 -72 3 -92 -25 -4 -5 -8 -65 -8 -132 l0 -123 -70 0 -70 0 0
+                    226 c0 215 -1 226 -19 231 -11 3 -21 15 -23 26 -2 12 -12 23 -23 26 -11 2 -23
+                    8 -27 15 -6 8 -11 7 -17 -4 -8 -12 -12 -10 -20 10 -9 24 -10 24 -10 3 -1 -12
+                    -15 -38 -31 -56 l-30 -35 0 -211 0 -212 -27 3 -28 3 -3 201 c-2 164 -5 204
+                    -17 214 -8 7 -15 24 -15 39 0 28 -41 64 -48 42 -2 -6 -10 -11 -18 -11 -8 0
+                    -14 -9 -14 -20 0 -10 -9 -28 -20 -38 -18 -17 -20 -34 -22 -283 l-3 -264 -22
+                    -3 c-18 -3 -23 -10 -23 -33 0 -33 -11 -40 -67 -42 l-38 -2 3 -65 c1 -36 -1
+                    -70 -6 -77 -4 -7 -40 -13 -92 -15 l-85 -3 -3 -78 -3 -77 3128 2 3128 3 0 75 0
+                    75 -90 5 -90 5 -3 78 -3 77 -49 0 -50 0 0 165 0 164 -77 3 -78 3 -3 87 -3 87
+                    -77 3 -77 3 -3 98 c-2 75 -6 97 -17 97 -8 0 -15 12 -17 28 -2 19 -9 28 -25 30
+                    -17 3 -22 -2 -25 -25 -2 -24 -8 -28 -33 -29 -16 0 -36 6 -43 13 -19 18 -45 16
+                    -70 -5 -20 -18 -22 -30 -24 -178 l-3 -159 -40 0 -40 0 4 432 c4 395 3 433 -12
+                    439 -14 5 -17 22 -17 95 0 76 -3 90 -19 98 -16 9 -20 25 -23 93 -3 69 -9 95
+                    -37 153 -98 203 -101 211 -101 258 0 35 -4 47 -15 47 -8 0 -17 -10 -19 -22z"/>
+                    <path d="M4211 1304 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
+                    </g>
+                </svg>
+                <h5 class="title">Herald Square Podiatry</h5>
+                <h5>Herald Square 39 W 32ND ST, RM 1200</h5>
+                <p>Situated in the heart of Manhattan's bustling Herald Square, this podiatry medical office offers comprehensive foot and ankle care to the diverse population of the city. The office prides itself on its patient-centered approach, providing individualized treatment plans tailored to meet each patient's specific needs. The team of skilled podiatrists specializes in a wide range of foot conditions, utilizing advanced diagnostic tools and evidence-based treatments. From general foot care to specialized services like sports medicine and orthotics, Herald Square Podiatry is committed to delivering exceptional care in a warm and welcoming environment.</p>
+              </div>
+              <div class="col">
+                <svg 
+                width="704.000000pt" height="104.000000pt" viewBox="0 0 704.000000 14.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,244.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M1220 2302 c0 -16 -6 -35 -14 -41 -7 -6 -16 -35 -19 -64 -7 -69 -37
+                -153 -83 -229 -55 -93 -219 -251 -349 -337 -128 -85 -345 -193 -495 -247 -114
+                -41 -136 -52 -122 -66 9 -9 130 31 262 87 45 19 88 35 95 35 7 0 15 4 17 9 5
+                13 125 71 132 64 3 -4 6 -2 6 4 0 13 115 83 136 83 8 0 14 4 14 9 0 8 114 101
+                124 101 9 0 142 143 178 191 21 28 52 80 69 116 17 35 32 63 33 61 2 -2 -9
+                -248 -23 -548 l-26 -545 -330 -2 c-181 -1 -408 -2 -502 -2 l-173 -1 0 -75 0
+                -75 490 0 490 0 0 -23 c0 -13 -18 -172 -40 -353 -21 -181 -42 -357 -46 -392
+                l-7 -62 247 0 c234 0 246 1 246 19 0 10 -20 190 -45 399 -25 209 -45 387 -45
+                396 0 15 188 16 2090 16 2070 0 2090 0 2090 -20 0 -10 -20 -189 -45 -397 -25
+                -207 -45 -385 -45 -395 0 -17 16 -18 245 -18 237 0 245 1 245 20 0 11 -20 188
+                -45 393 -25 206 -45 384 -45 396 l0 21 490 0 490 0 0 75 0 75 -172 1 c-95 0
+                -321 1 -503 2 l-330 2 -7 135 c-3 74 -13 302 -22 505 -9 204 -18 387 -20 408
+                -5 49 6 47 30 -5 33 -74 93 -158 168 -237 40 -42 75 -76 77 -76 3 0 36 -25 74
+                -55 39 -30 79 -60 90 -66 67 -35 115 -67 115 -77 0 -6 3 -7 6 -4 4 4 41 -11
+                83 -32 166 -85 408 -178 423 -163 14 14 -8 25 -135 72 -65 23 -178 72 -250
+                109 -383 192 -618 431 -657 666 -7 39 -18 82 -26 97 -8 14 -14 36 -14 47 0 19
+                -6 21 -65 21 l-64 0 -7 -35 c-3 -19 -10 -38 -15 -41 -5 -3 -9 -17 -9 -32 0
+                -45 -29 -142 -61 -206 -164 -322 -676 -621 -1304 -760 -322 -71 -411 -80 -785
+                -80 -367 0 -460 9 -760 74 -756 166 -1313 536 -1380 918 -6 37 -15 76 -20 87
+                -5 11 -10 31 -12 45 -3 24 -7 25 -70 28 l-68 3 0 -29z m194 -305 c20 -41 55
+                -96 78 -123 47 -57 147 -164 154 -164 5 0 114 -80 124 -90 3 -3 38 -25 78 -48
+                l72 -43 0 -274 0 -275 -70 0 c-49 0 -70 4 -70 13 0 9 -2 9 -8 0 -5 -8 -58 -12
+                -180 -12 -170 -1 -172 -1 -176 22 -3 12 -10 153 -16 312 -6 160 -15 367 -20
+                460 -10 175 -13 295 -7 295 2 0 20 -33 41 -73z m4262 -352 c-9 -187 -19 -403
+                -22 -480 -8 -208 16 -185 -189 -184 l-175 0 -2 282 -3 282 -2 -282 -3 -283
+                -70 0 -70 0 0 274 0 273 62 38 c34 21 67 38 75 38 7 0 13 4 13 8 0 5 35 35 78
+                67 131 100 244 234 297 352 l20 45 3 -45 c2 -25 -4 -198 -12 -385z m-3511
+                -238 c44 -19 96 -40 115 -47 19 -7 49 -19 65 -25 17 -7 58 -21 93 -30 l62 -18
+                2 -131 2 -131 3 115 c2 63 5 120 8 127 3 9 20 7 67 -5 l63 -17 3 -133 3 -132
+                -64 0 c-36 0 -68 5 -75 12 -8 8 -12 9 -12 1 0 -8 -80 -12 -285 -12 l-285 0 0
+                270 0 270 78 -40 c42 -21 113 -55 157 -74z m2965 -156 l0 -270 -282 0 c-207 0
+                -285 4 -290 12 -6 9 -8 9 -8 0 0 -9 -21 -13 -70 -13 l-71 0 3 132 3 131 64 18
+                c35 10 68 16 73 13 4 -3 8 -1 8 4 0 5 28 17 63 27 34 9 71 21 82 26 11 5 45
+                18 75 29 91 34 200 83 275 122 38 21 71 38 73 38 1 0 2 -121 2 -269z m-2390
+                -31 c50 -13 176 -37 230 -45 19 -3 49 -7 65 -10 241 -40 632 -45 920 -9 81 9
+                282 44 335 58 30 8 67 17 83 20 l27 6 0 -129 0 -130 -360 0 -360 0 -2 67 -2
+                67 -3 -67 -4 -67 -139 0 -140 0 -2 67 -2 67 -3 -67 -4 -67 -359 0 -360 0 0
+                130 c0 120 1 130 18 125 9 -3 37 -10 62 -16z"/>
+                <path d="M1774 1310 c0 -140 2 -198 3 -128 2 71 2 185 0 256 -1 70 -3 12 -3
+                -128z"/>
+                <path d="M2362 1045 c0 -16 2 -22 5 -12 2 9 2 23 0 30 -3 6 -5 -1 -5 -18z"/>
+                <path d="M4554 1135 c0 -55 1 -76 3 -47 2 29 2 74 0 100 -2 26 -3 2 -3 -53z"/>
+                <path d="M6264 1500 c0 -52 1 -74 3 -47 2 26 2 68 0 95 -2 26 -3 4 -3 -48z"/>
+                </g>
+                </svg>
+                <h6 class="title">Bensonhurst Podiatry</h6>
+                <h6>Bensonhurst 8622 BAY PKWY, suite 2B</h6>
+                <p>
+                  Located in the vibrant Bensonhurst neighborhood of Brooklyn, this podiatry office meets the foot and ankle treatment needs of the local community. The office provides a friendly, patient-centered environment where people of all ages can receive quality podiatry care. The skilled podiatrists at Bensonhurst Podiatry are experienced in treating a variety of foot conditions, including ingrown toenails, plantar fasciitis and diabetic foot problems. They prioritize open communication with patients, providing an in-depth understanding of diagnosis and treatment options, and focus on preventive care and patient education about foot and ankle health.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="condition">
+          <div class="col-condition">
+              <ol class="olcards">
+                <li style="--cardColor:#3b3a3aaa">
+                  <a class="content">
+                    <!-- <div class="icon">😀</div> -->
+                    <h3 class="title">Foot pain</h3>
+                    <p class="text">Discomfort and pain in the foot: the most common conditions, causes and risks associated with lack of treatment.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:#3b3a3aaa">
+                  <a class="content">
+                    <h3 class="title">Heel Pain</h3>
+                    <p class="text">Discomfort and pain in the heel: the most common conditions, causes and risks associated with lack of treatment.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:#3b3a3aaa">
+                  <a class="content">
+                    <h3 class="title">Foot Trauma</h3>
+                    <p class="text">Trauma or damage to the foot due to an external force or accident: types of injuries, causes and consequences.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                  <a class="content">
+                    <h3 class="title">Ingrown toenail</h3>
+                    <p class="text">A nail that grows into the surrounding skin, causing pain and inflammation: causes, symptoms and treatment. </p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(132, 132, 132, 0.6)">
+                  <a class="content">
+                    <h3 class="title">Nail fungus</h3>
+                    <p class="text">Fungal infection that affects the nails, leading to discoloration, thickening, and brittleness of the nails.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(163, 163, 163, 0.6)">
+                  <a class="content">
+                    <h3 class="title">Athlete's Foot or Foot Fungus</h3>
+                    <p class="text">Fungal infection causing itchy, red, and flaky skin on the feet, commonly known as athlete's foot.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                  <a class="content">
+                    <h3 class="title">Calluses and Corns</h3>
+                    <p class="text">Thickened and hardened patches of skin caused by repeated friction or pressure, known as calluses and corns.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:#3b3a3aaa">
+                  <a class="content">
+                    <h3 class="title">Plantar warts & Warts of feet</h3>
+                    <p class="text">Viral infections resulting in rough, raised warts on the soles of the feet, known as plantar warts.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:#3b3a3aaa">
+                  <a class="content">
+                    <h3 class="title">Bunion</h3>
+                    <p class="text">A bony bump at the base of the big toe, causing the joint to protrude and become misaligned.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                  <a href="articles/diabetic-foot-care" rel="noreferrer" target="_blank" aria-label="blank" class="content">
+                    <h3 class="title">Diabetic Foot Care</h3>
+                    <p class="text">Specialized care and prevention methods for foot-related complications in individuals with diabetes.</p>
+                  </a>
+                </li>
+                <li style="--cardColor:rgba(132, 132, 132, 0.6)">
+                  <a class="content">
+                    <h3 class="title">Bursitis</h3>
+                    <p class="text">Inflammation of the fluid-filled sacs (bursae) that cushion joints, causing pain and discomfort.</p>
+                  </a>
+                </li>
+              </ol>
+          </div>
+          <div class="col-condition">
+            <ol class="olcards">
+              <li style="--cardColor:#3b3a3aaa">
+                <a class="content">
+                  <h3 class="title">Arthritis</h3>
+                  <p class="text">Inflammation of the joints, leading to pain, stiffness, and reduced mobility, known as arthritis.</p>
+                </a>
+              </li>
+              <li style="--cardColor:#3b3a3aaa">
+                <a class="content">
+                  <h3 class="title">Ankle Sprain</h3>
+                  <p class="text">Stretching or tearing of ligaments in the ankle due to twisting or rolling the foot, causing pain and swelling.</p>
+                </a>
+              </li>
+              <li style="--cardColor:#3b3a3aaa">
+                <a class="content">
+                  <h3 class="title">Heel spurs</h3>
+                  <p class="text">Bony outgrowths on the heel bone that may cause heel pain and discomfort, known as heel spurs.</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                <a class="content">
+                  <h3 class="title">Sports injuries</h3>
+                  <p class="text">Sports-related injuries such as sprains, dislocations, fractures, stress fractures, or torn ligaments: causes and treatment</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(132, 132, 132, 0.6)">
+                <a class="content">
+                  <h3 class="title">Plantar fasciitis</h3>
+                  <p class="text">Inflammation of the tissue connecting the heel bone to the toes, causing heel pain, known as plantar fasciitis.</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(163, 163, 163, 0.6)">
+                <a class="content">
+                  <h3 class="title">Hammertoe</h3>
+                  <p class="text">Abnormal bending and curling of the toes, causing them to resemble a hammer, known as hammertoe.</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                <a class="content">
+                  <h3 class="title">Achilles tendonitis</h3>
+                  <p class="text">Inflammation of the Achilles tendon, causing pain and discomfort in the back of the ankle, known as Achilles tendonitis.</p>
+                </a>
+              </li>
+              <li style="--cardColor:#3b3a3aaa">
+                <a class="content">
+                  <h3 class="title">Morton's Neuroma</h3>
+                  <p class="text">Thickening of tissue around a nerve in the foot, causing pain and numbness, known as Morton's Neuroma.</p>
+                </a>
+              </li>
+              <li style="--cardColor:#3b3a3aaa">
+                <a class="content">
+                  <h3 class="title">Flat feet</h3>
+                  <p class="text">Condition where the arches of the feet are flattened, causing the entire foot to touch the ground, known as flat feet.</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(103, 102, 102, 0.6)">
+                <a class="content">
+                  <h3 class="title">Foot Fractures</h3>
+                  <p class="text">Broken bones in the foot due to injury or trauma, resulting in pain, swelling, and difficulty walking.</p>
+                </a>
+              </li>
+              <li style="--cardColor:rgba(132, 132, 132, 0.6)">
+                <a class="content">
+                  <h3 class="title">Ankle Sprains</h3>
+                  <p class="text">Injury to the ligaments of the ankle due to sudden twisting or rolling of the foot, causing pain and swelling.</p>
+                </a>
+              </li>
+            </ol>
+          </div>   
+        </section>
+        <serction id="footer">
+          <div class="phone">
+            <p>Call us to book online</p>
+            <a href="tel:+13322309230">(332)-230-9230</a>
+          </div>
+          <ul class="c-social">
+                <li class="c-social_item">
+                    <a class="c-social_link" href="/" target="_blank" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </li>
+                <li class="c-social_item">
+                    <a class="c-social_link" href="/" target="_blank" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>
+                    </a>
+                </li>
+                <li class="c-social_item">
+                        <a class="c-social_link" href="/" target="_blank" aria-label="Youtube">
+                            <svg version="1.1" id="Layer_1"  x="0px" y="0px"
+                                viewBox="0 0 24 24"  >
+                                <path d="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12
+                                    S18.6,0,12,0z"/>
+                                <path d="M15.8,7.8H8.2c-1.5,0-2.7,1.2-2.7,2.6v3.7c0,1.5,1.2,2.6,2.7,2.6h7.5c1.5,0,2.7-1.2,2.7-2.6v-3.7
+                                    C18.4,8.9,17.2,7.8,15.8,7.8z M14,12.4l-3.5,1.7c-0.1,0-0.2,0-0.2-0.1c0,0,0,0,0-0.1v-3.4c0-0.1,0.1-0.1,0.1-0.1c0,0,0,0,0.1,0
+                                    l3.5,1.8C14.1,12.2,14.1,12.4,14,12.4L14,12.4z"/>
+                            </svg>                       
+                        </a>
+                </li>
+          </ul>
+        </serction>
+        
+</Layout>

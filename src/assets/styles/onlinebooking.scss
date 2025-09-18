@@ -1,0 +1,217 @@
+.OnlineBooking{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 15vh;
+    .google-map-api{
+        margin-top: -15vh;
+        width: 60vw!important;
+        height: 100vh!important;
+    }
+    form{
+        width: 30vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: center;
+        input, select{
+            margin-bottom: 2vh;
+            height: 5vh;
+            border-width: 0;
+            padding-left: 1vw;
+            font-size: 1rem;
+            background-color: #1e1d1d17;
+            color: #1f1d1d;
+        }
+        option{
+            padding: 1vw;
+        }
+    }
+}
+.right-fixet-button{
+    display: none;
+}
+@font-face {
+	font-family: 'raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-weight: 600;
+	src: url(../../../public/fonts/raleway.woff2) format('truetype');
+	font-display: swap;
+}
+.map-icon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: 1.3em;
+    width:7em;
+    height: 5em;
+    top: -5em;
+    left: -3.5em;
+    position: relative;
+    svg{
+        width:4em;
+        g{
+            fill: #1f1d1d;
+        }
+    }
+    p{
+        font-family: "raleway";
+        width: 165%;
+        height: 50%;
+        margin: 0;
+        top: -0.5vh;
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 900;
+        background-color: #1f1d1d;
+        border-radius:10px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+body{
+    background-image: none!important;
+}
+.google-map-api{
+    filter: grayscale(35%);
+}
+.o-button_circle-icon,.circle-icon-booking {
+    background-color: #292727!important;
+    svg{
+        g{
+            fill: #fff;
+        }
+    }
+}
+.o-button_circle-icon_wrap::before,.o-button_circle-icon_wrap::after{
+    border-top: 2px solid #fff!important;
+}
+.o-button.-circle:hover::after {
+    background-color:#1f1d1dbe!important;
+}
+.o-button_label{
+    color: #fff!important;
+}
+.c-nav_label{
+    color: #1f1d1d!important;
+}
+.c-nav_main::after{
+   background-color: #fff!important;
+}
+.c-social_link::after{
+    background-color:#1f1d1d!important;
+}
+.c-social_link{
+    svg{
+        fill: #fff!important;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+    &:hover{
+        svg{
+            transition: 0.3s;
+            opacity: 1!important;
+        }
+    }
+}
+
+
+@media (min-width: 700px) and (max-width:1100px) {
+    .OnlineBooking{
+        margin-top: 10vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        .contact-form{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width:700px) {
+    .OnlineBooking{
+        margin-top: 8vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        .contact-form{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width:500px) {
+
+    html.scroll{
+        overflow: visible!important;
+        body{
+            #___gatsby{
+                #gatsby-focus-wrapper{
+                    .landing{
+                        header{
+                            height: 12vh;
+                            position: fixed;
+                            width: 100%;
+                            top: 0;
+                            background-color: #fff;
+                            z-index: 99999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .OnlineBooking{
+        margin-top: 12vh;
+        height: 108vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .contact-form{
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            .select{
+                width: 90%;
+            }
+            margin-bottom: 2vh;
+        }
+        .google-map-api{
+            width: 90vw!important;
+            height: 100%!important;
+            margin-bottom: 2vh;
+        }
+    }
+    .icon-select{
+        height: 5vw!important;
+    }
+    .MuiSelect-select{
+        div{
+            left: -35vw;
+        }
+    }
+
+    .MuiMenu-paper ul li div {
+        left: -39vw;
+    }
+}
+
