@@ -166,8 +166,8 @@ let heraldCoordinates = {
     lng:-73.98730787276237
   },
   zoom: 13,
-  key: "123",
-  mapId: '123'
+  key: "AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18",
+  mapId: 'AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18'
 
 };
 let bensonhurstCoordinates = {
@@ -175,16 +175,16 @@ let bensonhurstCoordinates = {
     lat: 40.601625060773614,
     lng: -73.99460618933475
   },
-  key: "123",
-  mapId: '123'
+  key: "AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18",
+  mapId: 'AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18'
 };
 let upperEastSideCoordinates = {
   center: {
     lat: 40.76405347683624,
     lng: -73.96797205006055
   },
-  key: "123",
-  mapId: '123'
+  key: "AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18",
+  mapId: 'AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18'
 };
 const AnyReactComponent = ({ text }) => <div className='map-icon'><p>{text}</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
@@ -211,7 +211,7 @@ export default function BookingOnline() {
   const onSubmit = data => {
     console.log(data);
 
-    emailjs.send('123','123', data, '123')
+    emailjs.send('AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18','AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18', data, 'AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18')
     .then((response) => {
        console.log('SUCCESS!', response.status, response.text);
        if (typeof window !== `undefined`) {
@@ -261,7 +261,7 @@ export default function BookingOnline() {
                 version={"beta"}
                 center={heraldCoordinates.center}
                 zoom={heraldCoordinates.zoom}
-                mapId='123'
+                mapId='AIzaSyCoevnYWPSh7ixkA1p8HslvsGJmkkfDG18'
               >
                 <AnyReactComponent
                   lat={40.748157307384865}
